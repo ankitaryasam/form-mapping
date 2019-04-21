@@ -1,0 +1,47 @@
+{
+    "users": [
+        {
+            "firstName": "Rakesh",
+            "lastName": "Rakhi",
+            "email": "rakesh@gmail.com",
+            "applications": [
+                {
+                    "name": "ANI",
+                    "role": "BAMS_MGR",
+                    "status": true
+                },
+                {
+                    "name": "BNI",
+                    "role": "ANI_SAD",
+                    "status": true
+                }
+            ]
+        }
+    ],
+    "applications": [
+        {
+            "name": "BAMS",
+            "groups": [
+                "BAMS_SAD",
+                "BAMS_MGR",
+                "BAMS_CEO"
+            ]
+        },
+        {
+            "name": "ANI",
+            "groups": [
+                "ANI_SAD",
+                "ANI_MGR",
+                "ANI_CEO"
+            ]
+        },
+        {
+            "name": "CERT",
+            "groups": [
+                "CERT_SAD",
+                "CERT_MGR",
+                "CERT_CEO"
+            ]
+        }
+    ]
+}

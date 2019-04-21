@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let user of users" (click)="selectUser(user)">
+    {{user.firstName}} asad
+  </li>
+</ul>
+
+<app-app-detail [user]="selectedUser" *ngIf="!!selectedUser"></app-app-detail>

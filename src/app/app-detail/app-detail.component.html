@@ -1,0 +1,23 @@
+<form [formGroup]="formGroup" (ngSubmit)="formSubmit()">
+  <input type="text" formControlName="firstName">
+  <input type="text" formControlName="lastName">
+  <input type="text" formControlName="email">
+
+  <table width="100%" formArrayName="applications">
+    <tr *ngFor="let app of applications; let i = index;" [formGroupName]="i">
+      <td>
+        <input type="text" formControlName="name">
+      </td>
+      <td>
+        <select name="role" id="role" formControlName="role">
+          <option *ngFor="let group of app.groups" [value]="group">{{group}}</option>
+        </select>
+      </td>
+      <td>
+        <input type="checkbox" formControlName="status">
+      </td>
+    </tr>
+  </table>
+  <input type="submit">
+</form>
+<p>{{formGroup.value | json}}</p>
